@@ -1,9 +1,11 @@
 package com.alkemy.disney.disney.entity;
 
+
 import javax.persistence.*;
-import javax.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
+
+import org.springframework.data.annotation.Id;
 
 @Entity
 @Table(name = "genero")
@@ -11,7 +13,7 @@ import lombok.Setter;
 @Setter
 public class GeneroEntity {
 
-    @Id
+    @javax.persistence.Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
     private String nombre;
